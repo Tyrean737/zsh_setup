@@ -10,7 +10,7 @@ fi
 USER=$(whoami)
 
 # Install packages
-sudo pacman -S zsh fzf woff2-font-awesome ttf-hack-nerd
+sudo pacman -S zsh fzf awesome-terminal-fonts powerline-fonts powerline ttf-hack-nerd
 trizen -S --noedit oh-my-zsh-git zsh-theme-powerlevel10k
 
 # Copy config

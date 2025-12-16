@@ -1,4 +1,4 @@
-# zsh Set Up
+#zsh Set Up
 Small script to set up zsh configuration.
 
 ### Install
@@ -9,8 +9,9 @@ sudo bash zsh_setup.sh
 
 and the script installs:
 - zsh
-- woff2-font-awesome (Font Awesome for Emoji support)
+- awesome-terminal-fonts (Font Awesome for Emoji support)
 - ttf-hack-nerd (Nerd Font for Unicode support)
+- powerline-fonts powerline
 - oh-my-zsh-git
 - zsh-theme-powerlevel10k
 
