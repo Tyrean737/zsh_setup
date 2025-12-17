@@ -18,14 +18,17 @@ fi
 USER=$(whoami)
 
 # Install packages
+echo "Installing required packages..."
 sudo pacman -S zsh zsh-completions fzf awesome-terminal-fonts powerline-fonts powerline ttf-hack-nerd
 trizen -S --noedit oh-my-zsh-git zsh-theme-powerlevel10k
 
 # Copy config
-mkdir /home/$USER/.config/zsh-config/
+echo "Copying zsh-config..."
+mkdir -p /home/$USER/.config/zsh-config/
 cp config.zsh /home/$USER/.config/zsh-config/
 
 # Copy plugins to zsh directory
+echo "Copying zsh plugins..."
 sudo cp -r plugins/ /usr/share/zsh/
 
 # Set up .zshrc
