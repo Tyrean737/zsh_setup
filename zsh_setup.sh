@@ -1,9 +1,17 @@
 #!/bin/bash
+set -e
 
 # Make sure script is not run as root
 if [[ "$EUID" -eq 0 ]]; then
   echo "This script must NOT be run as root." >&2
   exit 1
+fi
+
+# Make sure trizen is installed
+if ! command -v trizen >/dev/null 2>&1; then
+    echo "Error: trizen is not installed or not in PATH." >&2
+    echo "Please install it first (e.g. from the AUR)." >&2
+    exit 1
 fi
 
 # Get user name
